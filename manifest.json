@@ -1,0 +1,14 @@
+{
+  "name": "Turunu Secure",
+  "description": "Website Security Check",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icon.png"
+  },
+  "permissions": ["activeTab", "scripting"]
+}
