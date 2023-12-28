@@ -14,9 +14,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-top: 10px;
       }
 
       #SSL{
+        background-color: #1A2C34;
+        border-radius: 4px;
+        padding: 2px 8px;
+      }
+
+      #Paypal{
         background-color: #1A2C34;
         border-radius: 4px;
         padding: 2px 8px;
@@ -73,7 +80,7 @@ svg {
   </head>
   <body >
     <h1 class="heading">
-      Turunu Secure
+      Moriarty AI 
     </h1>
     <div class="dashboard">
       <svg>
@@ -83,9 +90,12 @@ svg {
       </div>
       <div class="properties">
         <span>SSL</span> <span id="SSL">No</span>
+
       </div>
-    
-    
-    <script src="popup.js"></script>
+      <div class="properties">
+        <span>PayPal</span> <span id="PayPal">No</span>
+
+      </div>
+   <script src="popup.js"></script>
   </body>
 </html>
