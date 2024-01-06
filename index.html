@@ -1,13 +1,13 @@
 <html>
   <head>
     <style>
-      .heading{
+      .heading {
         color: white;
         justify-content: center;
         display: flex;
       }
-      
-      .properties{
+
+      .properties {
         color: white;
         font-weight: 600;
         font-size: large;
@@ -17,102 +17,118 @@
         margin-top: 10px;
       }
 
-      #SSL{
-        background-color: #1A2C34;
+      #SSL,
+      #Paypal,
+      #privacy,
+      #country,
+      #refund {
+        background-color: #1a2c34;
         border-radius: 4px;
         padding: 2px 8px;
       }
 
-      #Paypal{
-        background-color: #1A2C34;
-        border-radius: 4px;
-        padding: 2px 8px;
-      }
-
-      body{
+      body {
         padding: 10px 20px;
         min-width: 180px;
         background: #243b47;
       }
-      
-.dashboard {
-  display: flex;
-  justify-content: center;
-}
 
-svg {
-  width: 114px;
-  height: 114px;
-  margin: 1em;
-}
+      .dashboard {
+        display: flex;
+        justify-content: center;
+      }
 
-.bg {
-  fill: none;
-  stroke-width: 10px;
-  stroke: #1A2C34;
-}
+      svg {
+        width: 114px;
+        height: 114px;
+        margin: 1em;
+      }
 
-[class^="meter-"] {
-  fill: none;
-  stroke-width: 10px;
-  stroke-linecap: round;
-  transform: rotate(-90deg);
-  transform-origin: 50% 50%;
-  
-}
+      .bg {
+        fill: none;
+        stroke-width: 10px;
+        stroke: #1a2c34;
+      }
 
-.meter-1 {
-  stroke-dasharray: 360;
-  stroke: aqua;
-  animation: progress-3 1s ease-out;
-}
+      [class^="meter-"] {
+        fill: none;
+        stroke-width: 10px;
+        stroke-linecap: round;
+        transform: rotate(-90deg);
+        transform-origin: 50% 50%;
+      }
 
-@keyframes progress-1 {
-    from {
-        stroke-dashoffset: 360;
-    }
-    to {
-        stroke-dashoffset: 240;
-    }
-}
+      .meter-1 {
+        stroke-dasharray: 360;
+        stroke: aqua;
+        animation: progress-3 1s ease-out;
+      }
 
-@keyframes progress-2 {
-    from {
-        stroke-dashoffset: 360;
-    }
-    to {
-        stroke-dashoffset: 120;
-    }
-}
+      @keyframes progress-1 {
+        from {
+          stroke-dashoffset: 360;
+        }
+        to {
+          stroke-dashoffset: 216;
+        }
+      }
 
-@keyframes progress-3 {
-  from {
-        stroke-dashoffset: 360;
-    }
-    to {
-        stroke-dashoffset: 360;
-    }
-}
-    </style>    
+      @keyframes progress-2 {
+        from {
+          stroke-dashoffset: 360;
+        }
+        to {
+          stroke-dashoffset: 288;
+        }
+      }
+
+      @keyframes progress-3 {
+        from {
+          stroke-dashoffset: 360;
+        }
+        to {
+          stroke-dashoffset: 360;
+        }
+      }
+      @keyframes progress-4 {
+        from {
+          stroke-dashoffset: 360;
+        }
+        to {
+          stroke-dashoffset: 144;
+        }
+      }
+      @keyframes progress-5 {
+        from {
+          stroke-dashoffset: 360;
+        }
+        to {
+          stroke-dashoffset: 72;
+        }
+      }
+    </style>
   </head>
-  <body >
-    <h1 class="heading">
-      Moriarty AI 
-    </h1>
+  <body>
+    <h1 class="heading">Moriarty AI</h1>
     <div class="dashboard">
       <svg>
         <circle class="bg" cx="57" cy="57" r="52" />
         <circle class="meter-1" id="meter-1" cx="57" cy="57" r="52" />
       </svg>
-      </div>
-      <div class="properties">
-        <span>SSL</span> <span id="SSL">No</span>
-
-      </div>
-      <div class="properties">
-        <span>PayPal</span> <span id="PayPal">No</span>
-
-      </div>
-   <script src="popup.js"></script>
+    </div>
+    <div class="properties"><span>SSL</span> <span id="SSL">No</span></div>
+    <div class="properties">
+      <span>PayPal</span> <span id="PayPal">No</span>
+    </div>
+    <div class="properties">
+      <span>Privacy Policy</span> <span id="privacy">No</span>
+    </div>
+    <div class="properties">
+      <span>Refund Policy</span> <span id="refund">No</span>
+    </div>
+    <div class="properties">
+      <span>Country</span> <span id="country">US</span>
+    </div>
+    <script src="popup.js"></script>
   </body>
 </html>
